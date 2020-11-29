@@ -17,8 +17,7 @@
 
         <ion-buttons slot="end">
           <ion-button>
-          <ion-icon slot="icon-only" name="cart"></ion-icon>
-          </ion-button>
+          <ion-icon  name="cart-outline"></ion-icon>
           </ion-buttons>
       </ion-toolbar>
     </ion-header>
