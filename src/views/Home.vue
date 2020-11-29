@@ -4,20 +4,21 @@
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-button>
-            <ion-icon slot="icon-only" name="menu-outline" class="ion-margin-end"></ion-icon>
+            <ion-icon  name="menu" class="ion-margin-end"></ion-icon>
             </ion-button>
 
             <ion-button>
-      <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+      <ion-icon  name="search"></ion-icon>
     </ion-button>
-    
+
         </ion-buttons>
         
         <ion-title>Blank Project</ion-title>
 
         <ion-buttons slot="end">
           <ion-button>
-          <ion-icon  name="cart-outline"></ion-icon>
+          <ion-icon  name="cart"></ion-icon>
+          </ion-button>
           </ion-buttons>
       </ion-toolbar>
     </ion-header>

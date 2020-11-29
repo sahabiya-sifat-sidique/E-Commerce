@@ -23,6 +23,25 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import { addIcons } from 'ionicons';
+import { search } from 'ionicons/icons';
+
+import { cart } from 'ionicons/icons';
+import { menu } from 'ionicons/icons';
+
+addIcons({
+  'menu': menu 
+});
+
+addIcons({
+  'search': search 
+});
+
+
+addIcons({
+  'cart': cart 
+});
+
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
