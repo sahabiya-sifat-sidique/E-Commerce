@@ -1,11 +1,12 @@
 <template>
+<ion-app>
+    <router-view></router-view>
+  </ion-app>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar>
+      <ion-toolbar color="primary">
         <ion-buttons slot="start">
-          <ion-button>
-            <ion-icon  name="menu" class="ion-margin-end"></ion-icon>
-            </ion-button>
+          <ion-menu-button auto-hide="false" class="ion-margin-end" componentId="main" @click="openStart()"></ion-menu-button>
 
             <ion-button>
       <ion-icon  name="search"></ion-icon>
@@ -23,35 +24,33 @@
       </ion-toolbar>
     </ion-header>
     
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Blank</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
-      <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-      </div>
+    <ion-content>
+      <ion-item >
+        <ion-label>Label 1</ion-label>
+        <ion-label>Label 2</ion-label>
+        <ion-label>Label 3</ion-label>
+      </ion-item>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
-import { defineComponent } from 'vue';
-export default defineComponent({
-  name: 'Home',
-  components: {
-    IonContent,
-    IonHeader,
-    IonPage,
-    IonTitle,
-    IonToolbar
+//import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+//import { defineComponent } from 'vue';
+import Subcomponent from '@/component/Subcomponent.vue';
+import { Plugins } from '@capacitor/core';
+import {createRouter} from '@ionic/vue-router'
 
+export default {
+  name: 'Home',
+  methods: {
+    openStart () {
+      this.$router.push("/Subcomponent");
+    }
   }
-});
+}
+
+
 </script>
 
 <style scoped>
