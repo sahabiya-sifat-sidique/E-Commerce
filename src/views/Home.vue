@@ -10,7 +10,7 @@
             <ion-button>
       <ion-icon  name="search"></ion-icon>
     </ion-button>
-
+    
         </ion-buttons>
         
         <ion-title>Blank Project</ion-title>
@@ -41,7 +41,6 @@
 <script lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
-
 export default defineComponent({
   name: 'Home',
   components: {
@@ -50,6 +49,7 @@ export default defineComponent({
     IonPage,
     IonTitle,
     IonToolbar
+
   }
 });
 </script>
@@ -64,12 +64,10 @@ export default defineComponent({
   top: 50%;
   transform: translateY(-50%);
 }
-
 #container strong {
   font-size: 20px;
   line-height: 26px;
 }
-
 #container p {
   font-size: 16px;
   line-height: 22px;
@@ -78,7 +76,6 @@ export default defineComponent({
   
   margin: 0;
 }
-
 #container a {
   text-decoration: none;
 }
